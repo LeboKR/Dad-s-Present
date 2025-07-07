@@ -84,15 +84,6 @@ const animateOnScroll = () => {
             }
         });
     };
-
-    function animateTextChange() {
-    const titleElement = document.getElementById('dynamic-title');
-    const jobTitles = [
-        "Construction Manager",
-        "Quality Control Specialist",
-        "Certified Plumbing Professional",
-        "Project Surveyor"
-    ];
     
     let currentIndex = 0;
     

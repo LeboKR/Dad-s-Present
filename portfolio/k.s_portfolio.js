@@ -16,6 +16,20 @@ mobileMenuBtn.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
+// Set Professional Title
+function setProfessionalTitle() {
+    const titles = [
+        "Quality Controller",
+        "Construction Manager",
+        "Surveyor",
+        "Building and Civil Instructor",
+        "Site Agent",
+        "Site Supervisor"
+    ];
+    document.querySelector('.professional-title').textContent = titles[0] + " | " + titles[1];
+}
+
+
 // Smooth Scrolling for Navigation
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {

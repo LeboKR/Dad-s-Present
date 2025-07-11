@@ -14,6 +14,102 @@
     background-size: cover;
 }
 
+.professional-title {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 1.5em; /* Fixed height to prevent layout shift */
+    display: inline-block;
+    min-width: 250px; /* Prevents width jumping during animation */
+    text-align: center;
+}
+.section {
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+/* Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  position: relative;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+/* References Section */
+.references {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.reference {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  border-top: 3px solid var(--primary-color);
+}
+
+.reference:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reference-name {
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 5px;
+}
+
+.reference-title {
+  color: var(--muted-color);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.skill-category {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+  color: var(--secondary-color);
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+}
+
 
 * {
     margin: 0;

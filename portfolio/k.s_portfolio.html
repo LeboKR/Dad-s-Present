@@ -12,7 +12,7 @@
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <a href="#">K.S Makopo Portfolio</a>
+                <a href="#home">K.S Makopo Portfolio</a>
             </div>
             
             <button class="mobile-toggle" aria-label="Menu">
@@ -20,11 +20,11 @@
             </button>
             
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <a href="#home" class="nav-link active">Home</a></li>
+                <a href="#about" class="nav-link">About</a></li>
+                <a href="#projects" class="nav-link">Projects</a></li>
+                <a href="#gallery" class="nav-link">Gallery</a></li>
+                <a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -32,17 +32,14 @@
     <!-- Hero Section -->
 <section class="hero" id="home">
     <div class="hero-content">
-        <h1>Khomo S. Makopo</h1>
+        <h1>Khomo Stephen Makopo</h1>
         <div class="profile-image-container">
             <img src="https://i.ibb.co/sddpJ9Sr/Whats-App-Image-2025-06-30-at-14-38-45-5c5d329c.jpg" 
                  alt="Khomo S. Makopo" 
                  class="profile-image">
         </div>
-        <p><strong>Construction Manager / Site Agent</strong></p>
-        <div class="Recommended">
-            <p>Organized, efficient, and target-oriented with 13+ years of construction experience managing large-scale Sanitation, Building, and Civil Projects under the City of Johannesburg.</p>
-            <a href="DAD'S PRESENT/my recommendation letter S.M.D.pdf" class="btn" target="_blank">Recommendation letter</a>
-        </div>
+        Hi I'm Khomo and I'm a 
+        <div id="dynamic-title"  class="professional-title">TITLE HERE</div>
         <div class="hero-buttons">
             <a href="#projects" class="btn">View Projects</a>
             <a href="#contact" class="btn btn-outline">Contact Me</a>
@@ -53,10 +50,11 @@
 <style>
     /* Hero Section */
     .hero {
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+        background: linear-gradient(white, #3498db);
         padding: 4rem 2rem;
         text-align: center;
         color: white;
+
     }
 
     .hero-content {
@@ -132,7 +130,9 @@
             width: 150px;
             height: 150px;
         }
-        
+        .letter 2 btn{
+            text color: white-space: ;;
+        }
         .hero h1 {
             font-size: 2rem;
         }
@@ -153,15 +153,27 @@
     <section class="container" id="about">
         <h2>Professional Profile</h2>
         <div class="about-content">
-            <p>I am an organized, efficient, and target-oriented Construction Manager / Site Agent with 13+ years of construction experience, managing large-scale Sanitation, Building and Civil Projects under the City of Johannesburg.</p>
-            
+            <p><ul><li>I'm organized, efficient, and target-oriented with 13+ years of construction experience managing large-scale Sanitation, Building, and Civil Projects under the City of Johannesburg.</li></ul></p>
+
             <h3 style="margin: 2rem 0 1rem 0;">Key Qualifications</h3>
             <ul style="margin-left: 2rem; margin-bottom: 2rem;">
-                <li>National N Engineering Diploma</li>
+                <li>National Diploma in Civil Engineering</li>
                 <li>Completed over 14 Sewer and Water line projects with ±30 water pipelines tie-in points</li>
                 <li>Building and Civil Quality Control on a 60MW Solar PV plant</li>
             </ul>
-            
+
+            <div>
+                <h2>Recommendation Letters</h2><ul>
+                <li><strong>Recommendation letter from S.M.D. Construction (Pty) Ltd:</strong></li>
+                <div class="btn btn-outline">
+                    <a href="https://drive.google.com/file/d/1fjiD8rSVSJjSldm4lON_oYm9O0x7OpkK/view?usp=drive_link" target="_blank">View Letter</a>
+                </div >
+                <li><strong>Planet Earth Construction Recommendation letter:</strong></li>
+                <div class="btn btn-outline">
+                    <a href="https://drive.google.com/file/d/1C2pYezHBG04Aa2G2crZMdvVg1NQdAV_y/view?usp=drive_link" target="_blank">View Letter</a>
+                </div>
+            </div>
+            <br></br>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
                 <div>
                     <h3>Mission</h3>
@@ -174,6 +186,47 @@
             </div>
         </div>
     </section>
+    <div class="section">
+        <h2>SKILLS</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Construction</h3>
+                <ul>
+                    <li>Over a decade of Construction industry experience</li>
+                    <li>Sewer lines and water lines installation</li>
+                    <li>Domestic plumbing</li>
+                    <li>Building and civil works</li>
+                    <li>Pipe surveying using Automatic Level</li>
+                    <li>Pipe pressure testing</li>
+                    <li>Pipe inspections using CS10</li>
+                </ul>
+            </div>
+            
+           <div class="skill-category">
+                <h3>Management</h3>
+                <ul>
+                    <li>Project management</li>
+                    <li>Site supervision</li>
+                    <li>Quality control</li>
+                    <li>Team building</li>
+                    <li>Workforce supervision</li>
+                    <li>Subcontractor management</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Personal</h3>
+                <ul>
+                    <li>Problem solving skills</li>
+                    <li>Obedient and innovative</li>
+                    <li>Strong work ethic</li>
+                    <li>Attention to detail</li>
+                    <li>Health and safety compliance</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     
     <!-- Projects Section -->
     <section class="container" id="projects">
@@ -189,17 +242,17 @@
         
         <div class="projects-grid">
             <!-- Placeholder for projects -->
-            <ol><strong>
+            <ul>
                 <div class="project-list">
- <li> 2 billion 60 MW DRD ERGO Mine Solar SPV Plant (Tshedza solar farm)</li>
-<li> 15 million Solar plant warehouses</li>
-<li> 1.4 million 10th Street Rennie Road Brakpan( Gravel Road rehabilitation)</li>
-<li> 168 000.00 10th Street Rennie Road Brakpan( Solar Street Light Installation)</li>
-<li> 7 million JW11017 Lenasia Southeast Basin (200-315mm Sewer Pipeline upgrade)</li>
-<li> 1.8 million JW 12029 Lombardy West (110 mm Water pipeline replacement)</li>
-<li> 14.3 million JW 11002 Stretford Ext 9a,and 1b(200-315mm Sewer Pipeline upgrade)</li>
-<li> 6.8 million JW 13018 Ivory Park (200- 450mm Sewer Pipeline upgrade)</li>
-<li> 18.2 million JW 13804 Zamimpilo Informal settlement (Ablutions Blocks)</li>
+ <li> <strong>2 billion</strong> 60 MW DRD ERGO Mine Solar SPV Plant (Tshedza solar farm)</li>
+<li> <strong>15 million</strong> Solar plant warehouses</li>
+<li> <strong>1.4 million</strong> 10th Street Rennie Road Brakpan( Gravel Road rehabilitation)</li>
+<li> <strong>168 000.00</strong> 10th Street Rennie Road Brakpan( Solar Street Light Installation)</li>
+<li> <strong>7 million</strong> JW11017 Lenasia Southeast Basin (200-315mm Sewer Pipeline upgrade)</li>
+<li> <strong>1.8 million</strong> JW 12029 Lombardy West (110 mm Water pipeline replacement)</li>
+<li> <strong>14.3 million</strong> JW 11002 Stretford Ext 9a,and 1b(200-315mm Sewer Pipeline upgrade)</li>
+<li> <strong>6.8 million</strong> JW 13018 Ivory Park (200- 450mm Sewer Pipeline upgrade)</li>
+<li> <strong>18.2 million</strong> JW 13804 Zamimpilo Informal settlement (Ablutions Blocks)</li>
 <li> JW 13804 Kathrada park Informal settlement (Ablutions Blocks)</li>
 <li> JW 13804 Alveda Park (Sewer rising)</li>
 <li> JW 13804 Alexandra Helen Joseph hostel (Ablution Blocks)</li>
@@ -208,9 +261,9 @@
 <li> JW 14076 Princess Plots (Standpipes)</li>
 <li> JW Brixton (200mm Pipe cracking)</li>
 <li> JW Glenhazel (110mm Water pipeline replacement)</li>
-<li> 14.641 million JW 14206 Witpoortjie B (Sewer pipeline upgrade)</li>
-<li> 1.8 million JW 12029 Lombardy West (110 mm Water pipeline replacement)</li>
-</div></strong></ol>
+<li> <strong>14.6 million</strong> JW 14206 Witpoortjie B (Sewer pipeline upgrade)</li>
+<li> <strong>1.8 million</strong> JW 12029 Lombardy West (110 mm Water pipeline replacement)</li>
+</div></ul>
 </div>
             <!-- Project 1 -->
             <!--<div class="project-card" data-category="solar">
@@ -304,7 +357,7 @@
             
             <!-- Image 2 -->
             <div class="gallery-item">
-                <img src="https://i.ibb.co/GQsY9cxt/Pipe-installation.jpg" alt="Pipe-installation" border="0">
+                <img src="" alt="Pipe-installation" border="0">
                 <div class="gallery-caption">Pipe Laying and Backfilling</div>
             </div>
             
@@ -340,7 +393,7 @@
             
             <!-- Image 8 -->
             <div class="gallery-item">
-                <img src="storm-drain.jpg" alt="Storm Drainpipe Installation">
+                <img src="https://i.ibb.co/GQsY9cxt/Pipe-installation.jpg" alt="Storm Drainpipe Installation">
                 <div class="gallery-caption">Storm Drainpipe Installation</div>
             </div>
         </div>
@@ -355,22 +408,41 @@
     </div>
     
     <!-- Contact Section -->
-    <section class="container" id="contact">
+     <section>
+      <div class="section" id="contact">
         <h2>Contact Information</h2>
+        <h3><strong>Project References</strong></h3>
+        <br></br>
+        <div class="references">
+            <div class="reference">
+                <div class="reference-name">Nico Gouws</div>
+                <div class="reference-title">Enerj Carbon Management (H.QC)</div>
+                <div>nicog@enerj.co.za</div>
+                <div>082 452 0298</div>
+            </div>
+            
+            <div class="reference">
+                <div class="reference-name">Lusindiso Tshefu</div>
+                <div class="reference-title">Planet Earth Construction (Project Manager)</div>
+                <div>lusindisot@planetearthsa.com</div>
+                <div>073 886 1921 or 061 941 0891</div>
+            </div>
+            
+            <div class="reference">
+                <div class="reference-name">Matodzi Ramoholo</div>
+                <div class="reference-title">Johannesburg Water Inspector</div>
+                <div>m.ramohulu@lwater.co.za</div>
+                <div>082 816 0333 or 072 365 2287</div>
+            </div>
+        </div>
         <div class="contact-info">
             <div class="contact-card">
                 <h3>Direct Contact</h3>
                 <p><strong>Phone:</strong> 078 618 5951 / 076 898 5364</p>
                 <p><strong>Email:</strong> khomomakopo@gmail.com</p>
             </div>
-            
-            <div class="contact-card">
-                <h3>Project References</h3>
-                <p><strong>Mr. Lusindiso Tshefu:</strong> 061 681 9878</p>
-                <p><strong>Mr. Matodzi Ramohulo:</strong> 082 816 0333</p>
-                <p><strong>Mr. Nicolas Gouws:</strong> 082 452 0298</p>
-            </div>
-        </div>
+        
+    </div>
     </section>
     
     <!-- Footer -->

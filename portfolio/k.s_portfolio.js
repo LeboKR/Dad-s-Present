@@ -15,19 +15,45 @@ mobileMenuBtn.addEventListener('click', () => {
     mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
     navMenu.classList.toggle('active');
 });
+// Set Professional Title Dynamically
 
-// Set Professional Title
-function setProfessionalTitle() {
-    const titles = [
-        "Quality Controller",
-        "Construction Manager",
-        "Surveyor",
-        "Building and Civil Instructor",
-        "Site Agent",
-        "Site Supervisor"
-    ];
-    document.querySelector('.professional-title').textContent = titles[0] + " | " + titles[1];
+// Professional Title Rotator
+const professionalTitles = [
+    "Construction Manager",
+    "Site Agent",
+    "Civil Engineer",
+    "Project Coordinator",
+    "Quality Controller"
+];
+
+const titleElements = document.querySelectorAll('.professional-title');
+let currentIndex = 0;
+
+function rotateTitles() {
+    // Update all elements with the class
+    titleElements.forEach(element => {
+        element.textContent = professionalTitles[currentIndex];
+        element.style.opacity = 0;
+        
+        // Fade-in animation
+        setTimeout(() => {
+            element.style.transition = "opacity 0.5s ease";
+            element.style.opacity = 1;
+        }, 100);
+    });
+    
+    // Increment index or reset
+    currentIndex = (currentIndex + 1) % professionalTitles.length;
 }
+
+// Rotate every 3 seconds (3000ms)
+setInterval(rotateTitles, 3000);
+
+// Initialize immediately
+rotateTitles();
+
+// Call the function to set the professional title on page load
+setProfessionalTitle();
 
 
 // Smooth Scrolling for Navigation

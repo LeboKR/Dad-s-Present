@@ -63,6 +63,13 @@ ul li::before {
   gap: 20px;
 }
 
+.professional-title {
+    transition: opacity 0.5s ease;
+    display: inline-block; /* Ensures smooth animation */
+    min-width: 200px; /* Prevents width jumping */
+    text-align: center; /* Optional for better alignment */
+}
+
 .reference {
   background: white;
   padding: 20px;

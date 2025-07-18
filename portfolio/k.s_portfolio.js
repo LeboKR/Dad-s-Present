@@ -26,6 +26,45 @@ const professionalTitles = [
     "Quality Controller"
 ];
 
+// Project Card Image Hover Effect
+document.addEventListener('DOMContentLoaded', function() {
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+        const imgContainer = card.querySelector('.project-img');
+        const mainImg = card.querySelector('.project-img img');
+        const hoverImg = card.querySelector('.project-img .hover-img');
+        
+        // Create hover image element if it doesn't exist
+        if (!hoverImg && mainImg) {
+            const hoverSrc = mainImg.getAttribute('data-hover-src');
+            if (hoverSrc) {
+                const hoverImg = document.createElement('img');
+                hoverImg.src = hoverSrc;
+                hoverImg.alt = mainImg.alt + ' - Additional View';
+                hoverImg.classList.add('hover-img');
+                imgContainer.appendChild(hoverImg);
+            }
+        }
+
+        // Hover effects
+        card.addEventListener('mouseenter', function() {
+            const hoverImg = this.querySelector('.hover-img');
+            if (hoverImg) {
+                hoverImg.style.opacity = '1';
+                mainImg.style.opacity = '0';
+            }
+        });
+
+        card.addEventListener('mouseleave', function() {
+            const hoverImg = this.querySelector('.hover-img');
+            if (hoverImg) {
+                hoverImg.style.opacity = '0';
+                mainImg.style.opacity = '1';
+            }
+        });
+    });
+});
 const titleElements = document.querySelectorAll('.professional-title');
 let currentIndex = 0;
 
